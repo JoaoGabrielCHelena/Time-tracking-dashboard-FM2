@@ -120,18 +120,20 @@
   text-align: center;
   position: absolute;
   color: white;
-  top: 0;
+  top: 2ch;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
 }
 #attribution a {
   color: hsl(228, 100%, 87%);
+  position: relative;
 }
 #attribution img {
   position: absolute;
-  left: 50%;
-  translate: -50% 3ch;
+  top: 50%;
+  left: 1ch;
+  transform: translateY(-50%);
   transform-origin: center;
   scale: 100%;
   transition: scale 200ms;

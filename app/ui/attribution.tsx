@@ -10,8 +10,8 @@ export default function Attribution() {
                 <Image 
                     src='/polygon.png'
                     alt='My Github'
-                    width={56}
-                    height={56}
+                    width={20}
+                    height={20}
                 />
             </a>
         </footer>
