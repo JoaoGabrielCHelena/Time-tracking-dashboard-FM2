@@ -9,11 +9,24 @@ export default function Block({ dataIndex, title, timeFrame }: { dataIndex: numb
         return input == 1 ? "hr" : "hrs"
     }
 
+    function previousTimeFrame(input:string){
+        switch (input) {
+            case 'daily':
+                return "Yesterday"
+            case 'weekly':
+                return "Last Week"
+            case 'monthly':
+                return "Last Month"
+            default:
+                return "Previous"
+        }
+    }
+
     const currentNum:number = data[dataIndex].timeframes[timeFrame as keyof object]['current' as keyof object]
     const currentStr:string = `${currentNum}${pluralCheck(currentNum)}`
 
     const previousNum:number = data[dataIndex].timeframes[timeFrame as keyof object]['previous' as keyof object]
-    const previousStr:string = `last week - ${previousNum}${pluralCheck(previousNum)}`
+    const previousStr:string = `${previousTimeFrame(timeFrame)} - ${previousNum}${pluralCheck(previousNum)}`
 
     const category:string = data[dataIndex].title
 
