@@ -7,7 +7,7 @@ export default function Attribution() {
         <footer id={styles.attribution} role="contentinfo">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             <a href="https://github.com/JoaoGabrielCHelena">
-                <Image
+                <Image 
                     src='/polygon.png'
                     alt='My Github'
                     width={56}
