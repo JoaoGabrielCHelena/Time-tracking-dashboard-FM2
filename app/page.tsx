@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main className={styles.wrapper}>
       <Profile setTimeFrame={setTimeFrame} timeFrame={timeFrame} />
-      <Block dataIndex={0} Category="Work" title="Work" timeFrame={timeFrame} />
-      <Block dataIndex={1} Category="Play" title="Play" timeFrame={timeFrame}/>
-      <Block dataIndex={2} Category="Study" title='Study' timeFrame={timeFrame}/>
-      <Block dataIndex={3} Category="Exercise" title='Exercise' timeFrame={timeFrame}/>
-      <Block dataIndex={4} Category="Social" title='Social' timeFrame={timeFrame}/>
-      <Block dataIndex={5} Category="SelfCare" title='Self Care' timeFrame={timeFrame}/>
+      <Block dataIndex={0} title="Work" timeFrame={timeFrame} />
+      <Block dataIndex={1} title="Play" timeFrame={timeFrame}/>
+      <Block dataIndex={2} title='Study' timeFrame={timeFrame}/>
+      <Block dataIndex={3} title='Exercise' timeFrame={timeFrame}/>
+      <Block dataIndex={4} title='Social' timeFrame={timeFrame}/>
+      <Block dataIndex={5} title='Self Care' timeFrame={timeFrame}/>
     </main>
   )
 }

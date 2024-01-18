@@ -4,7 +4,7 @@ import Image from '@/node_modules/next/image'
 import styles from '../page.module.css'
 
 
-export default function Profile({ setTimeFrame, timeFrame}) {
+export default function Profile({ setTimeFrame, timeFrame} : {setTimeFrame:any, timeFrame:string}) {
     return (
         <>
         <div className={styles.mainBlock} id={styles.profile}>
